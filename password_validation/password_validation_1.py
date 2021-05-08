@@ -1,7 +1,8 @@
-users = {"bighead":"password", "richard":"algorithm","dinesh":"gilfoyle", "gilfoyle":"satan", "jian":"erlich"}
+import getpass
+users = {"bighead":"password", "richard":"algorithm", "dinesh":"gilfoyle", "gilfoyle":"satan", "jian":"erlich"}
 
 username = input("What is your username? ")
-password = input("What is your password? ")
+password = getpass.getpass(prompt='What is the password? ')
 if username in users.keys():
     expected_password = users[username]
     if expected_password == password:
