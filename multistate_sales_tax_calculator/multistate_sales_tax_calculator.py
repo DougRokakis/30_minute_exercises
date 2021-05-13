@@ -90,12 +90,86 @@ while True:
         print("Please ensure to choose from the states provided above and check for spelling.")
         continue
     break
+
 while True:
-    try:
-        county_living_in = str(input("Please select a county from " +state_living_in.capitalize()+ ": "))
-    except:
-        print("Please type in the name of a county listed.")
-    else:
-        sales_tax_in_county = str(state_living_in).get(county_living_in.capitalize())
+    county_living_in = str(input("Please select a county from " +state_living_in.capitalize()+ ": "))
+    if state_living_in.lower() == "alabama":
+        sales_tax_in_county = alabama.get(county_living_in.capitalize())
         print("The tax on $" +str(order_total)+  " in " +str(county_living_in)+ " county is " +str(sales_tax_in_county*100)+ "%.\nYour total comes to $" +str(round(order_total + (order_total*sales_tax_in_county), 2))+ ".")
-        break
+            
+    elif state_living_in.lower() == "california":
+        sales_tax_in_county = california.get(county_living_in.capitalize())
+        print("The tax on $" +str(order_total)+  " in " +str(county_living_in)+ " county is " +str(sales_tax_in_county*100)+ "%.\nYour total comes to $" +str(round(order_total + (order_total*sales_tax_in_county), 2))+ ".")
+            
+    elif state_living_in.lower() == "delaware":
+        sales_tax_in_county = delaware.get(county_living_in.capitalize())
+        print("The tax on $" +str(order_total)+  " in " +str(county_living_in)+ " county is " +str(sales_tax_in_county*100)+ "%.\nYour total comes to $" +str(round(order_total + (order_total*sales_tax_in_county), 2))+ ".")
+            
+    elif state_living_in.lower() == "florida":
+        sales_tax_in_county = florida.get(county_living_in.capitalize())
+        print("The tax on $" +str(order_total)+  " in " +str(county_living_in)+ " county is " +str(sales_tax_in_county*100)+ "%.\nYour total comes to $" +str(round(order_total + (order_total*sales_tax_in_county), 2))+ ".")
+            
+    elif state_living_in.lower() == "georgia":
+        sales_tax_in_county = georgia.get(county_living_in.capitalize())
+        print("The tax on $" +str(order_total)+  " in " +str(county_living_in)+ " county is " +str(sales_tax_in_county*100)+ "%.\nYour total comes to $" +str(round(order_total + (order_total*sales_tax_in_county), 2))+ ".")
+            
+    elif state_living_in.lower() == "hawaii":
+        sales_tax_in_county = hawaii.get(county_living_in.capitalize())
+        print("The tax on $" +str(order_total)+  " in " +str(county_living_in)+ " county is " +str(sales_tax_in_county*100)+ "%.\nYour total comes to $" +str(round(order_total + (order_total*sales_tax_in_county), 2))+ ".")
+            
+    elif state_living_in.lower() == "idaho":
+        sales_tax_in_county = idaho.get(county_living_in.capitalize())
+        print("The tax on $" +str(order_total)+  " in " +str(county_living_in)+ " county is " +str(sales_tax_in_county*100)+ "%.\nYour total comes to $" +str(round(order_total + (order_total*sales_tax_in_county), 2))+ ".")
+            
+    elif state_living_in.lower() == "kansas":
+        sales_tax_in_county = kansas.get(county_living_in.capitalize())
+        print("The tax on $" +str(order_total)+  " in " +str(county_living_in)+ " county is " +str(sales_tax_in_county*100)+ "%.\nYour total comes to $" +str(round(order_total + (order_total*sales_tax_in_county), 2))+ ".")
+            
+    elif state_living_in.lower() == "louisiana":
+        sales_tax_in_county = louisiana.get(county_living_in.capitalize())
+        print("The tax on $" +str(order_total)+  " in " +str(county_living_in)+ " county is " +str(sales_tax_in_county*100)+ "%.\nYour total comes to $" +str(round(order_total + (order_total*sales_tax_in_county), 2))+ ".")
+            
+    elif state_living_in.lower() == "maine":
+        sales_tax_in_county = maine.get(county_living_in.capitalize())
+        print("The tax on $" +str(order_total)+  " in " +str(county_living_in)+ " county is " +str(sales_tax_in_county*100)+ "%.\nYour total comes to $" +str(round(order_total + (order_total*sales_tax_in_county), 2))+ ".")
+            
+    elif state_living_in.lower() == "nebraska":
+        sales_tax_in_county = nebraska.get(county_living_in.capitalize())
+        print("The tax on $" +str(order_total)+  " in " +str(county_living_in)+ " county is " +str(sales_tax_in_county*100)+ "%.\nYour total comes to $" +str(round(order_total + (order_total*sales_tax_in_county), 2))+ ".")
+            
+    elif state_living_in.lower() == "ohio":
+        sales_tax_in_county = ohio.get(county_living_in.capitalize())
+        print("The tax on $" +str(order_total)+  " in " +str(county_living_in)+ " county is " +str(sales_tax_in_county*100)+ "%.\nYour total comes to $" +str(round(order_total + (order_total*sales_tax_in_county), 2))+ ".")
+            
+    elif state_living_in.lower() == "pennsylvania":
+        sales_tax_in_county = pennsylvania.get(county_living_in.capitalize())
+        print("The tax on $" +str(order_total)+  " in " +str(county_living_in)+ " county is " +str(sales_tax_in_county*100)+ "%.\nYour total comes to $" +str(round(order_total + (order_total*sales_tax_in_county), 2))+ ".")
+            
+    elif state_living_in.lower() == "rhode island":
+        sales_tax_in_county = rhode_island.get(county_living_in.capitalize())
+        print("The tax on $" +str(order_total)+  " in " +str(county_living_in)+ " county is " +str(sales_tax_in_county*100)+ "%.\nYour total comes to $" +str(round(order_total + (order_total*sales_tax_in_county), 2))+ ".")
+            
+    elif state_living_in.lower() == "south carolina":
+        sales_tax_in_county = south_carolina.get(county_living_in.capitalize())
+        print("The tax on $" +str(order_total)+  " in " +str(county_living_in)+ " county is " +str(sales_tax_in_county*100)+ "%.\nYour total comes to $" +str(round(order_total + (order_total*sales_tax_in_county), 2))+ ".")
+            
+    elif state_living_in.lower() == "tennessee":
+        sales_tax_in_county = tennessee.get(county_living_in.capitalize())
+        print("The tax on $" +str(order_total)+  " in " +str(county_living_in)+ " county is " +str(sales_tax_in_county*100)+ "%.\nYour total comes to $" +str(round(order_total + (order_total*sales_tax_in_county), 2))+ ".")
+            
+    elif state_living_in.lower() == "utah":
+        sales_tax_in_county = utah.get(county_living_in.capitalize())
+        print("The tax on $" +str(order_total)+  " in " +str(county_living_in)+ " county is " +str(sales_tax_in_county*100)+ "%.\nYour total comes to $" +str(round(order_total + (order_total*sales_tax_in_county), 2))+ ".")
+            
+    elif state_living_in.lower() == "vermont":
+        sales_tax_in_county = vermont.get(county_living_in.capitalize())
+        print("The tax on $" +str(order_total)+  " in " +str(county_living_in)+ " county is " +str(sales_tax_in_county*100)+ "%.\nYour total comes to $" +str(round(order_total + (order_total*sales_tax_in_county), 2))+ ".")
+            
+    elif state_living_in.lower() == "washington":
+        sales_tax_in_county = alabama.get(county_living_in.capitalize())
+        print("The tax on $" +str(order_total)+  " in " +str(county_living_in)+ " county is " +str(sales_tax_in_county*100)+ "%.\nYour total comes to $" +str(round(order_total + (order_total*sales_tax_in_county), 2))+ ".")
+
+    else:
+        print("Please choose from the counties provided and make sure to check your spelling.")
+
+    break  
