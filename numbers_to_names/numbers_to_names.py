@@ -13,7 +13,7 @@ def numbers_for_months(numbers):
         11:"November",
         12:"December"
     }
-    return "The name of the month is " + numbers_equal_months.get(numbers, "You have chosen an invalid month")+"."
+    return numbers_equal_months.get(numbers, "nonexistent....You did not choose a number between 1 and 12.")
 
-numbers = int(input("Please enter the number of the month (hint hint..It can only be 1-12)"))
-print(str(numbers_for_months(numbers)))
+numbers = int(input("Please enter the number of the month (hint hint..It can only be 1-12): "))
+print("The name of the month you have chosen is "+ str(numbers_for_months(numbers)) +".")
